@@ -7,7 +7,7 @@ from tensorflow.keras.models import load_model
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 # Caminhos dos arquivos
-model_path = os.path.join(BASE_DIR, "notebooks", "modelo_tf")
+model_path = os.path.join(BASE_DIR, "modelo_tf")
 scaler_x_path = os.path.join(BASE_DIR, "models_artifacts", "scaler_x.pkl")
 scaler_y_path = os.path.join(BASE_DIR, "models_artifacts", "scaler_y.pkl")
 
