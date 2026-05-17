@@ -42,7 +42,8 @@ MODEL_MAE = Gauge("model_mae", "Mean Absolute Error do modelo")
 MODEL_RMSE = Gauge("model_rmse", "Root Mean Squared Error do modelo")
 MODEL_MAPE = Gauge("model_mape", "Mean Absolute Percentage Error do modelo")
 
-@app.get("/metrics")
+@app.get("/metrics", summary="Métricas usadas para o monitoramento",
+    description="Endpoint que calcula as métricas da infraestrutura da API e modelo.")
 def prometheus_metrics():
     return Response(
         generate_latest(),
@@ -242,7 +243,7 @@ def register_feedback(request: FeedbackRequest):
 
 
 
-@app.get("/monitor/metrics",
+@app.get("/model/performance",
          summary="Métricas de desempenho do modelo",
     description="Calcula e retorna métricas de avaliação do modelo, com base nos feedbacks registrados."
 )
