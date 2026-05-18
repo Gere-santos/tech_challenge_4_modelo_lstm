@@ -187,3 +187,15 @@ Demonstrar um pipeline completo de Machine Learning em produção, incluindo:
 - Infraestrutura em Linux Ubuntu Server 24.04 LTS  
 - Modelo LSTM com janela temporal (30 dias → 1 dia)  
 - Sistema completo de observabilidade e métricas de modelo  
+
+---
+
+# ⚙️ Como Executar o Projeto
+## 🔧 Clone o repositório
+
+git clone https://github.com/Gere-santos/tech_challenge_4_modelo_lstm.git
+cd seu-repo
+
+docker-compose up --build
+
+http://localhost:8000/docs
