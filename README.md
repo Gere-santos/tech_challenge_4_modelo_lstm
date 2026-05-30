@@ -6,6 +6,16 @@ A solução foi construída utilizando **FastAPI, TensorFlow/Keras, Docker, Prom
 
 ---
 
+## Integrantes:
+  
+- GEREMIAS FRANCISCO DE OLIVEIRA SANTOS
+  - geremias_cte@hotmail.com
+  
+- WAGNER ULISSES FONTALVA
+  - wagner.ulisses@gmail.com
+
+---
+
 # 🚀 API em Produção
 
 A API está disponível em:
